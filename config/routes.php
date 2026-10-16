@@ -82,4 +82,4 @@ use Controllers\ArticleController;
 $router->get('/articles',      [ArticleController::class, 'index']);
 $router->get('/articles/{id}', [ArticleController::class, 'show']);
 $router->post('/articles',     [ArticleController::class, 'add']);
-// $router->get('/', [Controllers\HomeController::class, 'index']);
+$router->get('/', [Controllers\HomeController::class, 'index']);
