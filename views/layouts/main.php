@@ -25,9 +25,6 @@
     <main>
         <?= $content ?>
     </main>
-    <footer>
-        <p>&copy; <?= date('Y') ?> — Micro-framework pédagogique</p>
-    </footer>
 </body>
 
 </html>

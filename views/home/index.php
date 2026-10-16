@@ -1,2 +1,3 @@
-<h1>Bienvenue sur le micro-framework !</h1>
-<p>Un framework pédagogique construit from scratch.</p>
+<h1>Carnet de contacts</h1>
+<p>Un petit carnet d'adresses construit avec mon micro-framework PHP.</p>
+<p><a href="/contacts">Voir mes contacts →</a></p>
