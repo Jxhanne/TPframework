@@ -39,7 +39,28 @@ class ContactsController
             return Response::html($html, 404);
         }
 
-        $html = $this->view->renderWithLayout('contacts/show', [
+        $html = $this->view->renderWithLayout('contacts/contact', [
+            'pageTitle' => $contact['prenom'] . ' ' . $contact['nom'],
+            'contact'   => $contact,
+        ]);
+        return Response::html($html);
+    }
+
+    public function add(Request $request): Response
+    {
+        $html = $this->view->renderWithLayout('contacts/add');
+        return Response::html($html);
+    }
+
+    public function delete(Request $request): Response
+    {
+        $html = $this->view->renderWithLayout('contacts');
+        return Response::html($html);
+    }
+
+    public function edit(Request $request): Response
+    {
+        $html = $this->view->renderWithLayout('contacts/edit', [
             'pageTitle' => $contact['prenom'] . ' ' . $contact['nom'],
             'contact'   => $contact,
         ]);
