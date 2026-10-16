@@ -170,11 +170,11 @@ class Router
 
                 // Bloc à décommenter si gestion des controllers
                 if (is_array($handler)) {
-                    [$controllerClass, $method] = $handler;
-                    $controller = new $controllerClass();
-                    $result = $controller->$method($request, $params ?? []);
+                    [$controllerClass, $action] = $handler;
+                    $controller = $container ? new $controllerClass($container) : new $controllerClass();
+                    $result = $controller->$action($request, $params);
                 } else {
-                    $result = $handler($request, $params ?? []);
+                    $result = $handler($request, $params);
                 }
 
                 // Bloc à commenter si pas de Container.php. Si Container.php commenter le bloc au dessus.
