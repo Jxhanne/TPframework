@@ -1,0 +1,68 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "nom": "Martin",
+      "prenom": "Lucas",
+      "age": 28,
+      "carte_bleue": "5412 7834 9021 6657",
+      "carte_pokemon_preferee": "Dracaufeu"
+    },
+    {
+      "id": 2,
+      "nom": "Dubois",
+      "prenom": "Camille",
+      "age": 34,
+      "carte_bleue": "4916 2208 7731 5049",
+      "carte_pokemon_preferee": "Pikachu"
+    },
+    {
+      "id": 3,
+      "nom": "Bernard",
+      "prenom": "Léa",
+      "age": 22,
+      "carte_bleue": "5287 1940 3365 8812",
+      "carte_pokemon_preferee": "Évoli"
+    },
+    {
+      "id": 4,
+      "nom": "Moreau",
+      "prenom": "Hugo",
+      "age": 41,
+      "carte_bleue": "4539 6620 1478 3095",
+      "carte_pokemon_preferee": "Mewtwo"
+    },
+    {
+      "id": 5,
+      "nom": "Petit",
+      "prenom": "Emma",
+      "age": 19,
+      "carte_bleue": "5174 9306 2850 4471",
+      "carte_pokemon_preferee": "Rondoudou"
+    },
+    {
+      "id": 6,
+      "nom": "Leroy",
+      "prenom": "Thomas",
+      "age": 52,
+      "carte_bleue": "4024 7715 8832 1960",
+      "carte_pokemon_preferee": "Ronflex"
+    },
+    {
+      "id": 7,
+      "nom": "Roux",
+      "prenom": "Chloé",
+      "age": 31,
+      "carte_bleue": "5398 4127 6603 7284",
+      "carte_pokemon_preferee": "Mimiqui"
+    },
+    {
+      "id": 8,
+      "nom": "Fournier",
+      "prenom": "Nathan",
+      "age": 25,
+      "carte_bleue": "4716 3359 0087 2543",
+      "carte_pokemon_preferee": "Lucario"
+    }
+  ]
+}
