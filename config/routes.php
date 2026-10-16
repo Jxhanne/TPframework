@@ -22,6 +22,6 @@ use Controllers\ArticleController;
 // A décommenter pour utiliser les controllers. Commenter les routes correspondant au dessus.
 $router->get('/contacts',      [ArticleController::class, 'index']);
 $router->get('/contacts/{id}', [ArticleController::class, 'show']);
-$router->post('/contact',      [ArticleController::class, 'add']);
-$router->post('/contact',      [ArticleController::class, 'delete']);
-$router->post('/contact',      [ArticleController::class, 'edit']);
+$router->post('/contact/add',      [ArticleController::class, 'add']);
+$router->post('/contact/delete',      [ArticleController::class, 'delete']);
+$router->post('/contact/edit',      [ArticleController::class, 'edit']);
