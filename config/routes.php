@@ -16,4 +16,5 @@ $router->get('/contacts',           [ContactsController::class, 'index']);
 $router->get('/contacts/{id}',      [ContactsController::class, 'show']);
 $router->post('/contact/add',       [ContactsController::class, 'add']);
 $router->post('/contact/delete',    [ContactsController::class, 'delete']);
-$router->post('/contact/edit',      [ContactsController::class, 'edit']);
+$router->get('/contacts/{id}/edit', [ContactsController::class, 'edit']);
+$router->post('/contact/edit',      [ContactsController::class, 'update']);
