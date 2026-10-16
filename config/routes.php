@@ -13,16 +13,16 @@
 use App\Response;
 use App\Request;
 
-use Controllers\ArticleController;
+use Controllers\ContactsController;
 
 
 /** @var App\Router $router */
 
 
 // A décommenter pour utiliser les controllers. Commenter les routes correspondant au dessus.
-$router->get('/contacts',      [ArticleController::class, 'index']);
-$router->get('/contacts/{id}', [ArticleController::class, 'show']);
-$router->post('/contact/add',      [ArticleController::class, 'add']);
-$router->post('/contact/delete',      [ArticleController::class, 'delete']);
-$router->post('/contact/edit',      [ArticleController::class, 'edit']);
+$router->get('/contacts',      [ContactsController::class, 'index']);
+$router->get('/contacts/{id}', [ContactsController::class, 'show']);
+$router->post('/contact/add',      [ContactsController::class, 'add']);
+$router->post('/contact/delete',      [ContactsController::class, 'delete']);
+$router->post('/contact/edit',      [ContactsController::class, 'edit']);
 $router->get('/', [Controllers\HomeController::class, 'index']);

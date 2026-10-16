@@ -5,7 +5,7 @@ namespace Controllers;
 use App\Request;
 use App\Response;
 
-class ArticleController
+class ContactsController
 {
 
     public function index(Request $request): Response
@@ -17,7 +17,7 @@ class ArticleController
         ];
         $html = '<h1>Articles</h1><ul>';
         foreach ($articles as $a) {
-            $html .= "<li><a href=\"/articles/{$a['id']}\">{$a['title']}</a></li>";
+            $html .= "<li><a href=\"/contacts/{$a['id']}\">{$a['title']}</a></li>";
         }
         $html .= '</ul>';
         return Response::html($html);
@@ -26,7 +26,7 @@ class ArticleController
     public function show(Request $request, array $params): Response
     {
         $id = (int) $params['id'];
-        return Response::html("<h1>Article n°$id</h1><p>Contenu de l'article...</p>");
+        return Response::html("<h1>Contact n°$id</h1><p>informations du Contact...</p>");
     }
 
     public function add(Request $request): Response
